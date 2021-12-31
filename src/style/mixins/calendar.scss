@@ -1,0 +1,83 @@
+.calendar{
+    padding: 20px 40px;
+
+    .calendar-header{
+        border: none;
+
+        table th:hover{
+            background: transparent;
+        }
+
+        .year-title{
+            font-size:4em;
+            font-family: 'Dancing Script', cursive;
+            color: #f75c90;
+        }
+
+        .year-neighbor{
+            font-size: 2.25em;
+        }
+        .year-neighbor2{
+            font-size: 1.5em;
+        }
+    }
+
+    .months-container{
+        justify-content: center;
+        gap: 40px;
+
+        .month-container{
+            background: #fff;
+            padding: 20px;
+            min-width: 280px;
+            box-shadow: 15px 15px 40px rgba(0,0,0,.15);
+
+            .month{
+                .month-title{
+                    color: #5a8990;
+                    font-size: 3em;
+                    font-weight: 200;
+                    font-family: 'Dancing Script', cursive;
+
+                }
+                
+            }
+
+            .month{
+
+                td:first-child,
+                td:last-child,
+                thead tr:nth-child(2) th:first-child,
+                thead tr:nth-child(2) th:last-child
+                {
+                    color: #f75c90;
+                }
+
+                td.day .day-content{
+                    padding: 6px 8px;
+                }
+
+                th.day-header{
+                    color: #777;
+                    font-size: 1.8em;
+                    font-weight: 700;
+                    padding-bottom: 1em;
+                }
+
+                tr td{
+                    font-size: 1.6em;
+                    font-weight: 500;
+                    color: #777;
+
+                    &.day .day-content:hover{
+                        background: #f75c90;
+                        color: #fff;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}
